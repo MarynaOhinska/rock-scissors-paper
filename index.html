@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock scissors paper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popUp" id="popUp">
+            <img src="joystick.webp" id="png">
+            <h3 id="lastMsg"></h3>
+            <p id="results"></p>
+            <button id="btn">
+                Ok
+            </button>
+    </div>
+    <div class="container">
+        <h1>rock paper scissors</h1>
+        <div>
+            <button id="btnStart">
+                new game
+            </button>
+        </div>
+        <div>
+            <p>select item</p> 
+        </div>
+        <div class="section">
+            <select id="shape" disabled="disabled">
+                <option value="rock">
+                    rock
+                </option>
+                <option value="paper">
+                    paper
+                </option>
+                <option value="scissors">
+                    scissors
+                </option>
+            </select>
+        </div>
+        <div>
+            <button id="btnGo" disabled="disabled">
+                make the move
+            </button>
+        </div>
+        <div>computer made a choise</div>
+        <input type="text" id="pcChoise" readonly>
+        <div id="resBlock" hidden="true">
+            <p>results:</p>
+            <div id="resPC">
+                computer: <span id="pc"></span>
+            </div>
+            <div id="resUser">
+                you: <span id="user"></span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
